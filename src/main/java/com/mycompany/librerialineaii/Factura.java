@@ -7,7 +7,7 @@ package com.mycompany.librerialineaii;
 
 /**
  *
- * @author shhin
+ * @author Germán
  */
 public class Factura {
     

@@ -7,8 +7,27 @@ package com.mycompany.librerialineaii;
 
 /**
  *
- * @author shhin
+ * @author Germán
+ *
  */
 public class Caja {
+
+    private int cantidad;
+
+    public Caja(int cantidad) {
+       this.cantidad = cantidad;
+    }
+        
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
     
+    public void ingresoDinero(){
+    
+    }    
+
 }
