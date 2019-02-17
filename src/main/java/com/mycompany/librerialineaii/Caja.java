@@ -13,10 +13,6 @@ package com.mycompany.librerialineaii;
 public class Caja {
 
     private int cantidad;
-
-    public Caja(int cantidad) {
-       this.cantidad = cantidad;
-    }
         
     public int getCantidad() {
         return cantidad;
@@ -26,8 +22,12 @@ public class Caja {
         this.cantidad = cantidad;
     }
     
+     public Caja(int cantidad) {
+        this.cantidad = cantidad;
+    }  
+     
     public void ingresoDinero(){
     
-    }    
+    }  
 
 }
