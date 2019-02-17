@@ -11,4 +11,55 @@ package com.mycompany.librerialineaii;
  */
 public class Inventario {
     
+    private int idInventario;
+    
+    private int cantidadInicial;
+    
+    private int cantidadDisponible;
+
+    public int getIdInventario() {
+        return idInventario;
+    }
+
+    public void setIdInventario(int idInventario) {
+        this.idInventario = idInventario;
+    }
+
+    public int getCantidadInicial() {
+        return cantidadInicial;
+    }
+
+    public void setCantidadInicial(int cantidadInicial) {
+        this.cantidadInicial = cantidadInicial;
+    }
+
+    public int getCantidadDisponible() {
+        return cantidadDisponible;
+    }
+
+    public void setCantidadDisponible(int cantidadDisponible) {
+        this.cantidadDisponible = cantidadDisponible;
+    }
+
+    public Inventario(int idInventario, int cantidadInicial, int cantidadDisponible) {
+        this.idInventario = idInventario;
+        this.cantidadInicial = cantidadInicial;
+        this.cantidadDisponible = cantidadDisponible;
+    }
+    
+    public void ingresarLibro(){
+        
+    }
+    
+    public void modificarLibro(){
+        
+    }
+    
+    public void eliminarLibro(){
+        
+    }
+    
+    public void consultarLibro(){
+        
+    }
 }
