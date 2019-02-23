@@ -6,158 +6,71 @@
 package com.mycompany.librerialineaii;
 
 /**
- * Clase que se encarga de el manejo de los usuaios clientes en la aplicación
+ *
  * @author Germán
  */
 public class Cliente {
     
-    /**
-     * Almacena el nombre del cliente
-     */
-    private String nombre;
+    private char nombre;
     
-    /**
-     * Almacena el número de documento del cliente
-     */
     private long documento;
     
-    /**
-     * Almacena el correo del cliente
-     */
-    private String correo;
+    private char correo;
     
-    /**
-     * Almacena el teléfono del cliente
-     */
     private long telefono;
     
-    /**
-     * Almacena la dirección de residencia del cliente
-     */
-    private String direccion;
+    private char direccion;
 
-    /**
-     * Constructor que recibe los parametros necesarios para inicializar un objeto de esta clase
-     * @param nombre
-     * @param documento
-     * @param correo
-     * @param telefono
-     * @param direccion 
-     */
-    public Cliente(String nombre, long documento, String correo, long telefono, String direccion) {
-        this.nombre = nombre;
-        this.documento = documento;
-        this.correo = correo;
-        this.telefono = telefono;
-        this.direccion = direccion;
-    }
-
-    /**
-     * Método para obtener el nombre del cliente
-     * @return el nombre del cliente
-     */
-    public String getNombre() {
+    public char getNombre() {
         return nombre;
     }
-    
-    /**
-     * Método para asignar el nombre del cliente
-     * @param nombre 
-     */
-    public void setNombre(String nombre) {
+
+    public void setNombre(char nombre) {
         this.nombre = nombre;
     }
-    
-    /**
-     * Método para onbeter el número de documento
-     * @return el número de documento
-     */
+
     public long getDocumento() {
         return documento;
     }
-    
-    /**
-     * Método para asignar el número de documento
-     * @param documento 
-     */
+
     public void setDocumento(long documento) {
         this.documento = documento;
     }
 
-    /**
-     * Método para obtener el correo de un cliente
-     * @return el correo
-     */
-    public String getCorreo() {
+    public char getCorreo() {
         return correo;
     }
 
-    /**
-     * Método para asignar el correo a un cliente
-     * @param correo 
-     */
-    public void setCorreo(String correo) {
+    public void setCorreo(char correo) {
         this.correo = correo;
     }
 
-    /**
-     * Método para obtener el número telefónico de un cliente
-     * @return el número de teléfono
-     */
     public long getTelefono() {
         return telefono;
     }
 
-    /**
-     * Método para asignar el número telefónico
-     * @param telefono 
-     */
     public void setTelefono(long telefono) {
         this.telefono = telefono;
     }
 
-    /**
-     * Método para obtener la dirección de residencia
-     * @return la dirección de residencia
-     */
-    public String getDireccion() {
+    public char getDireccion() {
         return direccion;
     }
 
-    /**
-     * Método para asignar la dirección de residencia
-     * @param direccion 
-     */
-    public void setDireccion(String direccion) {
+    public void setDireccion(char direccion) {
         this.direccion = direccion;
     }
 
-    /**
-     * Método para agregar un cliente
-     */
-    public void agregarCliente(){
-        
-    }
+    public Cliente(char nombre, long documento, char correo, long telefono, char direccion) {
+        this.nombre = nombre;
+        this.documento = documento;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.direccion = direccion;
+    }    
     
-    /**
-     * Método para modificar un cliente
-     */
     public void modificarCliente(){
     
-    }
-    
-    /**
-     * Método para eliminar un cliente
-     */
-    public void EliminarCliente(){
-        
-    }
-    
-    /**
-     * Método para consultar un cliente
-     */
-    public void consultarCliente(){
-        
     }
     
 }
