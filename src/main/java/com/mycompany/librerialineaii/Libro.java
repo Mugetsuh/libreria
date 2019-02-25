@@ -6,153 +6,79 @@
 package com.mycompany.librerialineaii;
 
 /**
- * Clase encargada de almacenar la información de los libros
+ *
  * @author Germán
  */
 public class Libro {
     
-    /**
-     * Variable que almacena el nombre del libro
-     */
-    private String nombre;
+    private char nombre;
     
-    /**
-     * Variable que almacena el nombre del autor del libro 
-     */
-    private String autor;
+    private char autor;
     
-    /**
-     * Variable que almacena el nombre del la editorial del libro
-     */
-    private String editorial;
+    private char editoria;
     
-    /**
-     * Variable que almacena el género del libro
-     */
-    private String genero;
+    private char genero;
     
-    /**
-     * Variable que almacena la del libro
-     */
     private float version;
     
-    /**
-     * Variable que almacena precio unitario del libro
-     */
     private long valorLibro;
 
-    /**
-     * Constructor que recibe los parametros necesarios para inicializar un objeto de esta clase
-     * @param nombre
-     * @param autor
-     * @param editorial
-     * @param genero
-     * @param version
-     * @param valorLibro 
-     */
-    public Libro(String nombre, String autor, String editorial, String genero, float version, long valorLibro) {
-        this.nombre = nombre;
-        this.autor = autor;
-        this.editorial = editorial;
-        this.genero = genero;
-        this.version = version;
-        this.valorLibro = valorLibro;
-    }
-
-    /**
-     * Método para obtener el nombre del libro
-     * @return el nombre del libro
-     */
-    public String getNombre() {
+    public char getNombre() {
         return nombre;
     }
 
-    /**
-     * Método para asignar el nombre del libro
-     * @param nombre 
-     */
-    public void setNombre(String nombre) {
+    public void setNombre(char nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * Método para obtener el nombre del autor del libro
-     * @return el nombre del autor del libro
-     */
-    public String getAutor() {
+    public char getAutor() {
         return autor;
     }
 
-    /**
-     * Método para asignar el nombre del libro
-     * @param autor 
-     */
-    public void setAutor(String autor) {
+    public void setAutor(char autor) {
         this.autor = autor;
     }
 
-    /**
-     * Método para obtener el nombre de la editorial del libro
-     * @return el nombre de la editorial del libro
-     */
-    public String getEditorial() {
-        return editorial;
+    public char getEditoria() {
+        return editoria;
     }
 
-    /**
-     * Método para asignar el nombre de la editorial del libro
-     * @param editorial 
-     */
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
+    public void setEditoria(char editoria) {
+        this.editoria = editoria;
     }
 
-    /**
-     * Método para obtener el género del libro
-     * @return el género del libro
-     */
-    public String getGenero() {
+    public char getGenero() {
         return genero;
     }
 
-    /**
-     * Método para asignar el género del libro
-     * @param genero 
-     */
-    public void setGenero(String genero) {
+    public void setGenero(char genero) {
         this.genero = genero;
     }
 
-    /**
-     * Método para obtener la versión del libro
-     * @return la versión del libro
-     */
     public float getVersion() {
         return version;
     }
 
-    /**
-     * Método para asignar la versión del libro
-     * @param version 
-     */
     public void setVersion(float version) {
         this.version = version;
     }
 
-    /**
-     * Método para obtener el precio unitario del libro
-     * @return el precio unitario del libro
-     */
     public long getValorLibro() {
         return valorLibro;
     }
 
-    /**
-     * Método para asignar el precio unitario del libro
-     * @param valorLibro 
-     */
     public void setValorLibro(long valorLibro) {
         this.valorLibro = valorLibro;
     }
 
+    public Libro(char nombre, char autor, char editoria, char genero, float version, long valorLibro) {
+        this.nombre = nombre;
+        this.autor = autor;
+        this.editoria = editoria;
+        this.genero = genero;
+        this.version = version;
+        this.valorLibro = valorLibro;
+    }   
+    
+    
 }
