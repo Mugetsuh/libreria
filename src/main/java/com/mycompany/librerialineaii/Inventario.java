@@ -5,60 +5,67 @@
  */
 package com.mycompany.librerialineaii;
 
+import java.util.List;
+
 /**
- *
+ * Clase que se encarga del manejo de todos los libros de la biblioteca
  * @author Germán
  */
 public class Inventario {
     
-    private int idInventario;
+    /**
+     * objeto que almacena la lista de libros de la librería
+     */
+    List<Libro> listaLibros;
     
-    private int cantidadInicial;
-    
-    private int cantidadDisponible;
-
-    public int getIdInventario() {
-        return idInventario;
+    /**
+     * Constructor que recibe los parametros necesarios para inicializar un objeto de esta clase
+     * @param listaLibros 
+     */
+    public Inventario(List<Libro> listaLibros) {
+        this.listaLibros = listaLibros;
     }
 
-    public void setIdInventario(int idInventario) {
-        this.idInventario = idInventario;
+    /**
+     * Método para obtener la lista de libros
+     * @return 
+     */
+    public List<Libro> getListaLibros() {
+        return listaLibros;
     }
 
-    public int getCantidadInicial() {
-        return cantidadInicial;
-    }
-
-    public void setCantidadInicial(int cantidadInicial) {
-        this.cantidadInicial = cantidadInicial;
-    }
-
-    public int getCantidadDisponible() {
-        return cantidadDisponible;
-    }
-
-    public void setCantidadDisponible(int cantidadDisponible) {
-        this.cantidadDisponible = cantidadDisponible;
-    }
-
-    public Inventario(int idInventario, int cantidadInicial, int cantidadDisponible) {
-        this.idInventario = idInventario;
-        this.cantidadInicial = cantidadInicial;
-        this.cantidadDisponible = cantidadDisponible;
+    /**
+     * Método para asignar la lista de libros
+     * @param listaLibros 
+     */
+    public void setListaLibros(List<Libro> listaLibros) {
+        this.listaLibros = listaLibros;
     }
     
+    /**
+     * Método para agregar un libro
+     */
     public void ingresarLibro(){
         
     }
     
+    /**
+     * Método para modificar un libro
+     */
     public void modificarLibro(){
         
     }
     
+    /**
+     * Método para eliminar un libro
+     */
     public void eliminarLibro(){
         
     }
     
+    /**
+     * Método para consultar libros
+     */
     public void consultarLibro(){
         
     }
